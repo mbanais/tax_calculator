@@ -1,66 +1,69 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="./css/">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0," />
+        <link rel="stylesheet" href="./public/liaisons/css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     </head>
     <body>
         <header >
             <button type="button" class="reinitialize">Reinitialize</button>
         </header>
-        <main>
-            <div>
-                <section class="title">
-                    <h1>Canadian <br> taxes <br> calculator</h1>
-                </section>
-                <section class="province">
-                    <h2>1</h2>
-                    <label>Pick a province</label>
-                    <select id="province">
-                        <option value=""></option>
-                        <option value="AB">Alberta</option>
-                        <option value="BC">British-Columbia</option>
-                        <option value="MB">Manitoba</option>
-                        <option value="NB">New-Brunswick</option>
-                        <option value="NS">Nova-Scotia</option>
-                        <option value="ON">Ontario</option>
-                        <option value="PEI">Prince-Edward-Island</option>
-                        <option value="QC">Quebec</option>
-                        <option value="SK">Saskatchewan</option>
-                    </select>
-                </section>
-                <section class="price">
-                    <h2>2</h2>
-                    <form>
-                        <label for="price">Enter your price</label>
-                        <input name="price" id="price" value="">
-                        <button type="button">Get the total</button>
-                    </form>
-                </section>
-                <section class="decoMaple">
-                    <img class="decoMaple__img" src="./images/maple_leaf/rouge.svg" alt="" width="45px">
-                    <img class="decoMaple__img" src="./images/maple_leaf/bleu.svg" alt="" width="45px">
-                    <img class="decoMaple__img" src="./images/maple_leaf/rouge.svg" alt="" width="45px">
-                    <img class="decoMaple__img" src="./images/maple_leaf/bleu.svg" alt="" width="45px">
-                </section>
-                <section class="decoCircle">
-                    <span>&#9679;</span>
-                    <span>&#9679;</span>
-                    <span>&#9679;</span>
-                    <span>&#9679;</span>
-                </section>
-                <section class="result">
-                    <h2>3</h2>
-                    <div class="ctn_result">
-                        <p>In <span class="results__province"></span>,<br>
-                        your total is <br>
-                        <span class="results__price"></span>.</p>
-                        <p class="results__txFederal">Federal tax (5%) <span class="federal__amount"></span></p>
-                        <p class="results__txProvince">Provincial tax (<span class="provincial"></span>) <span class="provincial__amount"></span></p>        
-                    </div>
-                </section>
-            </div>
-            
+        <main class="ctn_project">
+            <section class="title">
+                <h1>Canadian <br> taxes <br> calculator</h1>
+            </section>
+            <section class="provinces">
+                <h2>1</h2>
+                <label>Pick a province</label><br>
+                <select id="provinces">
+                    <option value=""></option>
+                    <option value="AB">Alberta</option>
+                    <option value="BC">British-Columbia</option>
+                    <option value="MB">Manitoba</option>
+                    <option value="NB">New-Brunswick</option>
+                    <option value="NL">Newfoundland-and-Labrador</option>
+                    <option value="NS">Nova-Scotia</option>
+                    <option value="ON">Ontario</option>
+                    <option value="PEI">Prince-Edward-Island</option>
+                    <option value="QC">Quebec</option>
+                    <option value="SK">Saskatchewan</option>
+                </select>
+            </section>
+            <section class="amount">
+                <h2>2</h2>
+                <form>
+                    <label for="amount">Enter your amount</label>
+                    <input name="amount" id="amount" value="">
+                    <button class="getTotal" type="button">Get the total</button>
+                </form>
+            </section>
+            <section class="decoMaple">
+                <img class="decoMaple__img" src="./images/maple_leaf/rouge.svg" alt="" width="45px">
+                <img class="decoMaple__img" src="./images/maple_leaf/bleu.svg" alt="" width="45px">
+                <img class="decoMaple__img" src="./images/maple_leaf/rouge.svg" alt="" width="45px">
+                <img class="decoMaple__img" src="./images/maple_leaf/bleu.svg" alt="" width="45px">
+            </section>
+            <section class="decoCircle">
+                <span>&#9679;</span>
+                <span>&#9679;</span>
+                <span>&#9679;</span>
+                <span>&#9679;</span>
+            </section>
+            <section class="result">
+                <div class="result_ctn">
+                    <div class="ctn_result" >
+                        <h2>3</h2>
+                        <div>
+                            <p >In <span class="results__province"></span>,<br>
+                            your total is <br>
+                            <span class="results__amount"></span>.</p>
+                            <p class="results__txFederal">Federal tax (5%) <span class="federal__amount"></span></p>
+                            <p class="results__txProvince">Provincial tax (<span class="provincial__percentage"></span>) <span class="provincial__amount"></span></p>        
+                        </div>
+                    </div>  
+                </div> 
+                
+            </section>
         </main>
         <footer>&#169; 2022-2024 - Canadian taxes calculator | Anaïs MB</footer>
     </body>

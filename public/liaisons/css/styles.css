@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400&display=swap");
+/*
+Les variables
+*/
+html {
+  width: 100%;
+  margin: 0 0;
+  font-family: "Montserrat";
+}
+html body {
+  max-width: 100%;
+  margin: 0 4px;
+  background: #F9F4EE;
+  font-size: "Montserrat";
+  color: #31333C;
+}
+@media (min-width: 700px) {
+  html body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+html body .ctn_project {
+  margin-top: 0.5em;
+}
+@media (min-width: 700px) {
+  html body .ctn_project {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #31333C;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+html body h2 {
+  color: transparent;
+  font-size: 4em;
+  font-family: "Holtwood One SC";
+  -webkit-text-stroke: 0.7px;
+  margin: 0 15px 0 10px;
+}
+
+button {
+  color: #fff;
+  background: #31333C;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+.title {
+  text-align: right;
+  border: 1px solid #31333C;
+  border-radius: 10px;
+  padding: 1em 1em;
+  font-family: "Holtwood One SC";
+  color: #D9531A;
+  text-shadow: -3px 3px #31333C;
+}
+@media (min-width: 700px) {
+  .title {
+    flex: 0 1 50%;
+    width: 30%;
+  }
+}
+.title h2 {
+  font-size: xx-large;
+  word-wrap: break-word;
+}
+
+.provinces {
+  background-color: #31333C;
+  color: #fff;
+  border-radius: 10px;
+  margin-top: 2em;
+  padding: 0 3px 1.5em 3px;
+}
+@media (min-width: 700px) {
+  .provinces {
+    flex: 0 1 35%;
+    width: 31.6666666667%;
+  }
+}
+.provinces h2 {
+  -webkit-text-stroke-color: #fff;
+}
+.provinces label {
+  font-size: 24px;
+  margin-left: 2em;
+}
+.provinces select {
+  height: 45px;
+  width: 85%;
+  background-color: #31333C;
+  color: #fff;
+  border: solid 2px #fff;
+  border-radius: 5px;
+  margin-left: 2em;
+}
+@media (min-width: 700px) {
+  .provinces select {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+.amount {
+  background-color: #D9531A;
+  color: #31333C;
+  border-radius: 10px;
+  margin-top: 2em;
+  padding: 0 3px 1.5em 3px;
+}
+@media (min-width: 700px) {
+  .amount {
+    flex: 0 1 70%;
+    width: 30%;
+    margin-top: 0;
+  }
+}
+.amount h2 {
+  -webkit-text-stroke-color: #31333C;
+}
+.amount form {
+  background: #F9F4EE;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 75%;
+}
+.amount form label {
+  font-size: 24px;
+}
+.amount form input {
+  border: none;
+  border-bottom: solid 2px #31333C;
+  background-color: transparent;
+  line-height: 3em;
+}
+
+.decoCircle {
+  font-size: 6em;
+}
+.decoCircle span:nth-child(1) {
+  color: #31333C;
+}
+.decoCircle span:nth-child(2) {
+  color: #fff;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #31333C;
+}
+.decoCircle span:nth-child(3) {
+  color: #D9531A;
+}
+.decoCircle span:nth-child(4) {
+  color: transparent;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #31333C;
+}
+
+.result {
+  color: #31333C;
+  border-radius: 5px;
+  margin-top: 2em;
+  padding: 0 3px 0 3px;
+  position: relative;
+  border: solid 1px #31333C;
+  aspect-ratio: 1/1;
+  width: 95%;
+}
+@media (min-width: 700px) {
+  .result {
+    aspect-ratio: unset;
+    flex: 0 1 75%;
+    width: 30%;
+  }
+}
+.result .result_ctn {
+  background-color: #fff;
+  border-radius: 5px;
+  position: relative;
+  top: -8px;
+  left: -8px;
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+  border: solid 1px #31333C;
+}
+.result .result_ctn h2 {
+  -webkit-text-stroke-color: #31333C;
+}
+.result .result_ctn .ctn_result {
+  max-width: 100%;
+}
+.result .result_ctn .ctn_result p {
+  padding-left: 1em;
+}
+
+.decoMaple {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (min-width: 700px) {
+  .decoMaple {
+    flex: 0 1 18%;
+    width: 30%;
+  }
+}
+
+.decoCircle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (min-width: 700px) {
+  .decoCircle {
+    flex: 0 1 18%;
+    width: 30%;
+  }
+}
+
+footer {
+  text-align: center;
+  margin: 2em 0;
+  background: #31333C;
+  color: #F9F4EE;
+  padding: 2em 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

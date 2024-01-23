@@ -1,0 +1,40 @@
+html{
+    width: 100%;
+    margin: 0 0;
+    font-family: $textfont;
+    body{
+        max-width: 100%;
+        margin: 0 4px;
+        background: $offwhite;
+        font-size: $textfont;
+        color: $blue;
+        @media (min-width:700px) {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        .ctn_project{
+            margin-top: .5em;
+            @media (min-width: 700px) {
+                height: 100%;
+                width: 100%;
+                border: 1px solid $blue;
+                border-radius: 10px;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+            }
+        }
+        h2{
+            color: transparent;
+            font-size: 4em;
+            font-family: $titlefont;
+            -webkit-text-stroke: .7px;
+            margin: 0 15px 0 10px;
+        }
+    }
+}

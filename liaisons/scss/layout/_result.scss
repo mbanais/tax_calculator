@@ -1,0 +1,35 @@
+.result{
+    color: $blue;
+    border-radius: 5px;
+    margin-top: 2em;
+    padding: 0 3px 0 3px ;
+    position: relative;
+    border: solid 1px $blue;
+    aspect-ratio: 1/1;
+    width: 95%;
+    @media (min-width:700px) {
+        aspect-ratio: unset;
+        flex: 0 1 75%;
+        width: calc(90% / 3);
+    }
+    .result_ctn{
+        background-color: $white;
+        border-radius: 5px;
+        position: relative;
+        top: -8px;
+        left: -8px;
+        height: 100%;
+        width: 100%;
+        z-index: 4;
+        border: solid 1px $blue;
+        h2{
+            -webkit-text-stroke-color: $blue;
+        }
+        .ctn_result{
+            max-width: 100%;
+            p{
+                padding-left: 1em;
+            }
+        }
+    }
+}

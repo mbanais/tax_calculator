@@ -1,0 +1,19 @@
+.decoCircle{
+    font-size: 6em;
+    span:nth-child(1){
+        color: $blue;
+    }
+    span:nth-child(2){
+        color: $white;
+        -webkit-text-stroke: 1px;
+        -webkit-text-stroke-color: $blue;
+    }
+    span:nth-child(3){
+        color: $red;
+    }
+    span:nth-child(4){
+        color: transparent;
+        -webkit-text-stroke: 1px;
+        -webkit-text-stroke-color: $blue;
+    }
+}

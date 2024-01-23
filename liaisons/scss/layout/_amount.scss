@@ -1,0 +1,33 @@
+.amount{
+    background-color: $red;
+    color: $blue;
+    border-radius: 10px;
+    margin-top: 2em;
+    padding: 0 3px 1.5em 3px ;
+    @media (min-width: 700px) {
+        flex: 0 1 70%;
+        width: calc(90% / 3);
+        margin-top: 0;
+    }
+    h2{
+        -webkit-text-stroke-color: $blue;
+    }
+    form{
+        background: $offwhite;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 75%;
+        label{
+            font-size: 24px;
+        }
+        input{
+            border: none;
+            border-bottom: solid 2px $blue;
+            background-color: transparent;
+            line-height: 3em;
+        }
+    }
+}
