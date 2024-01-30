@@ -13,8 +13,11 @@
                 <h1>Canadian <br> taxes <br> calculator</h1>
             </section>
             <section class="provinces">
-                <h2>1</h2>
-                <label>Pick a province</label><br>
+                <div>
+                    <h2>1</h2>
+                    <p>Pick a province</p>
+                </div>                
+                <label hidden>Pick a province</label><br>
                 <select id="provinces">
                     <option value=""></option>
                     <option value="AB">Alberta</option>
@@ -51,18 +54,20 @@
             </section>
             <section class="result">
                 <div class="result_ctn">
-                    <div class="ctn_result" >
-                        <h2>3</h2>
-                        <div>
-                            <p >In <span class="results__province"></span>,<br>
-                            your total is <br>
-                            <span class="results__amount"></span>.</p>
-                            <p class="results__txFederal">Federal tax (5%) <span class="federal__amount"></span></p>
-                            <p class="results__txProvince">Provincial tax (<span class="provincial__percentage"></span>) <span class="provincial__amount"></span></p>        
+                    <div class="ctn_result">
+                        <div class="ctn_result__title">
+                            <h2>3</h2>
+                            <p>Get your result</p>
+                        </div>  
+                        <div class="resultDisplay" hidden>
+                            <p>Province: <span class="results__province"></span></p>
+                            <p>Amount: <span class="results__amount"></span>$</p>
+                            <p class="results__txFederal">Federal tax (5%): <span class="federal__amount"></span></p>
+                            <p class="results__txProvince">Provincial tax (<span class="provincial__percentage"></span>): <span class="provincial__amount"></span></p>
+                            <p>Your total will be <br> <span class="results__finalAmount"></span>$.</p>        
                         </div>
                     </div>  
                 </div> 
-                
             </section>
         </main>
         <footer>&#169; 2022-2024 - Canadian taxes calculator | Anaïs MB</footer>

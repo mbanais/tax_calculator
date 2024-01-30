@@ -4,7 +4,7 @@
     border-radius: 10px;
     margin-top: 2em;
     padding: 0 3px 1.5em 3px ;
-    @media (min-width: 700px) {
+    @media (min-width: 800px) {
         flex: 0 1 70%;
         width: calc(90% / 3);
         margin-top: 0;
@@ -20,6 +20,16 @@
         justify-content: space-around;
         align-items: center;
         height: 75%;
+        padding-bottom: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+        @media (min-width: 800px) {
+            margin-left: .5em;
+            margin-right: .5em;
+        }
+        @media (min-width: 1000px) {
+            margin-bottom: unset;
+        }
         label{
             font-size: 24px;
         }
@@ -28,6 +38,13 @@
             border-bottom: solid 2px $blue;
             background-color: transparent;
             line-height: 3em;
+            font-size: 24px;
+            width: 50%;
+            margin-bottom: 1em;
+            text-align: center;
+            @media (min-width: 800px) {
+                margin-bottom: unset;
+            }
         }
     }
 }

@@ -8,7 +8,7 @@ html{
         background: $offwhite;
         font-size: $textfont;
         color: $blue;
-        @media (min-width:700px) {
+        @media (min-width:800px) {
             height: 100vh;
             width: 100vw;
             display: flex;
@@ -17,7 +17,11 @@ html{
         }
         .ctn_project{
             margin-top: .5em;
-            @media (min-width: 700px) {
+            @media (min-width: 500px) {
+                padding-left: 15%;
+                padding-right: 15%;
+            }
+            @media (min-width: 800px) {
                 height: 100%;
                 width: 100%;
                 border: 1px solid $blue;

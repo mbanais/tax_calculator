@@ -15,7 +15,7 @@ html body {
   font-size: "Montserrat";
   color: #31333C;
 }
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   html body {
     height: 100vh;
     width: 100vw;
@@ -27,7 +27,13 @@ html body {
 html body .ctn_project {
   margin-top: 0.5em;
 }
-@media (min-width: 700px) {
+@media (min-width: 500px) {
+  html body .ctn_project {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+@media (min-width: 800px) {
   html body .ctn_project {
     height: 100%;
     width: 100%;
@@ -51,9 +57,11 @@ html body h2 {
 button {
   color: #fff;
   background: #31333C;
-  padding: 10px 15px;
+  padding: 20px 15px;
   border: none;
   border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 1.1em;
 }
 
 .title {
@@ -65,15 +73,25 @@ button {
   color: #D9531A;
   text-shadow: -3px 3px #31333C;
 }
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   .title {
     flex: 0 1 50%;
     width: 30%;
   }
 }
-.title h2 {
-  font-size: xx-large;
+.title h1 {
+  font-size: xxx-large;
   word-wrap: break-word;
+}
+@media (min-width: 800px) {
+  .title h1 {
+    font-size: xx-large;
+  }
+}
+@media (min-width: 1000px) {
+  .title h1 {
+    font-size: xxx-large;
+  }
 }
 
 .provinces {
@@ -83,14 +101,23 @@ button {
   margin-top: 2em;
   padding: 0 3px 1.5em 3px;
 }
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   .provinces {
     flex: 0 1 35%;
     width: 31.6666666667%;
   }
 }
-.provinces h2 {
+.provinces div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.provinces div h2 {
   -webkit-text-stroke-color: #fff;
+}
+.provinces div p {
+  font-size: 24px;
+  line-height: 2em;
 }
 .provinces label {
   font-size: 24px;
@@ -104,11 +131,12 @@ button {
   border: solid 2px #fff;
   border-radius: 5px;
   margin-left: 2em;
+  font-size: 1.1em;
 }
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   .provinces select {
     width: 70%;
-    margin: 0 auto;
+    margin: 0 auto 0 2em;
   }
 }
 
@@ -119,7 +147,7 @@ button {
   margin-top: 2em;
   padding: 0 3px 1.5em 3px;
 }
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   .amount {
     flex: 0 1 70%;
     width: 30%;
@@ -137,6 +165,20 @@ button {
   justify-content: space-around;
   align-items: center;
   height: 75%;
+  padding-bottom: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+@media (min-width: 800px) {
+  .amount form {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+}
+@media (min-width: 1000px) {
+  .amount form {
+    margin-bottom: unset;
+  }
 }
 .amount form label {
   font-size: 24px;
@@ -146,6 +188,15 @@ button {
   border-bottom: solid 2px #31333C;
   background-color: transparent;
   line-height: 3em;
+  font-size: 24px;
+  width: 50%;
+  margin-bottom: 1em;
+  text-align: center;
+}
+@media (min-width: 800px) {
+  .amount form input {
+    margin-bottom: unset;
+  }
 }
 
 .decoCircle {
@@ -175,17 +226,18 @@ button {
   padding: 0 3px 0 3px;
   position: relative;
   border: solid 1px #31333C;
-  aspect-ratio: 1/1;
   width: 95%;
+  height: fit-content;
 }
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   .result {
     aspect-ratio: unset;
     flex: 0 1 75%;
     width: 30%;
+    height: fit-content;
   }
 }
-.result .result_ctn {
+.result_ctn {
   background-color: #fff;
   border-radius: 5px;
   position: relative;
@@ -196,14 +248,24 @@ button {
   z-index: 4;
   border: solid 1px #31333C;
 }
-.result .result_ctn h2 {
-  -webkit-text-stroke-color: #31333C;
-}
-.result .result_ctn .ctn_result {
+.result_ctn .ctn_result {
   max-width: 100%;
 }
-.result .result_ctn .ctn_result p {
+.result_ctn .ctn_result__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.result_ctn .ctn_result__title h2 {
+  -webkit-text-stroke-color: #31333C;
+}
+.result_ctn .ctn_result__title p {
   padding-left: 1em;
+  font-size: 24px;
+}
+.result_ctn .resultDisplay p {
+  margin-left: 0.5em;
+  font-size: 1.3em;
 }
 
 .decoMaple {
@@ -212,7 +274,7 @@ button {
   justify-content: space-around;
   align-items: center;
 }
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   .decoMaple {
     flex: 0 1 18%;
     width: 30%;
@@ -225,7 +287,7 @@ button {
   justify-content: space-around;
   align-items: center;
 }
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   .decoCircle {
     flex: 0 1 18%;
     width: 30%;

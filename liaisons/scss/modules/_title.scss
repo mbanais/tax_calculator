@@ -6,14 +6,18 @@
     font-family: $titlefont;
     color: $red;
     text-shadow: -3px 3px $blue;
-    //font-size: larger;
-    @media (min-width: 700px) {
+    @media (min-width: 800px) {
         flex: 0 1 50%;
         width: calc(90% / 3);
     }
-    h2{
-        //font-size: xx-large;
-        font-size: xx-large;
+    h1{
+        font-size: xxx-large;
         word-wrap: break-word;
+        @media (min-width: 800px) {
+            font-size: xx-large;
+        }
+        @media (min-width: 1000px) {
+            font-size: xxx-large;
+        }        
     }
 }
